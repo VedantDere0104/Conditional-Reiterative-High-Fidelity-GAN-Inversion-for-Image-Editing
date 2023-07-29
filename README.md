@@ -31,7 +31,7 @@ First, create a folder to store the testing images. Ensure that the images in th
 ```
 bash inference.sh
 ```
-
+You can check the commented code in `inference.sh` file which shows different edits. Uncomment the necessary edit and run.
 ## Arguments 
 
 | Argument | working |
