@@ -1,43 +1,30 @@
-# python ./scripts/inference_new.py \
-# --images_dir=/content/drive/MyDrive/celeb/CelebAMask-HQ/CelebA-HQ-img --edit_attribute='inversion' \
-# --save_dir=/content/output  /content/drive/MyDrive/HFGI_New/HFGI/experiment/ffhq_condition_first/checkpoints/iteration_16000.pt
+python ./scripts/inference_new.py \
+--images_dir=test_imgs --edit_attribute='inversion' \
+--save_dir=output_dir  iteration_16000.pt
 
 # python ./scripts/inference_cars.py \
-# --images_dir=/content/drive/MyDrive/car_ims --edit_attribute='inversion' --n_sample 100 \
-# --save_dir=/content/drive/MyDrive/HFGI_New/HFGI/hfgi_output/cars  /content/drive/MyDrive/HFGI_New/HFGI/experiment/cars_encode/checkpoints/iteration_40000.pt
-
-python ./scripts/edit.py \
---images_dir=/content/test  --edit_attribute='smile' --edit_degree=1.0 \
---save_dir=/content/output  /content/drive/MyDrive/HFGI_New/HFGI/experiment/ffhq_condition_first/checkpoints/iteration_16000.pt
+# --images_dir=car_ims --edit_attribute='inversion' --n_sample 100 \
+# --save_dir=outputs_cars  iteration_40000.pt
 
 # python ./scripts/edit.py \
-# --images_dir=/content/drive/MyDrive/celeb/CelebAMask-HQ/CelebA-HQ-img  --edit_attribute='age' --edit_degree=-2.0 \
-# --save_dir=/content/drive/MyDrive/HFGI_New/HFGI/hfgi_output/age_negative  /content/drive/MyDrive/HFGI_New/HFGI/experiment/ffhq_condition_first/checkpoints/iteration_16000.pt
+# --images_dir=test_imgs  --edit_attribute='smile' --edit_degree=1.0 \
+# --save_dir=output_smile  iteration_16000.pt
 
 # python ./scripts/edit.py \
-# --images_dir=/content/drive/MyDrive/celeb/CelebAMask-HQ/CelebA-HQ-img --edit_attribute='lip'  \
-# --save_dir=/content/drive/MyDrive/HFGI_New/HFGI/hfgi_output/lip    /content/drive/MyDrive/HFGI_New/HFGI/experiment/ffhq_condition_first/checkpoints/iteration_16000.pt
+# --images_dir=test_imgs  --edit_attribute='age' --edit_degree=-2.0 \
+# --save_dir=output_smile_neg  iteration_16000.pt
 
 # python ./scripts/edit.py \
-# --images_dir=/content/drive/MyDrive/celeb/CelebAMask-HQ/CelebA-HQ-img --edit_attribute='beard'  \
-# --save_dir=/content/drive/MyDrive/HFGI_New/HFGI/hfgi_output/beard    /content/drive/MyDrive/HFGI_New/HFGI/experiment/ffhq_condition_first/checkpoints/iteration_16000.pt
+# --images_dir=test_imgs --edit_attribute='lip'  \
+# --save_dir=output_lip   iteration_16000.pt
 
 # python ./scripts/edit.py \
-# --images_dir=/content/drive/MyDrive/celeb/CelebAMask-HQ/CelebA-HQ-img --edit_attribute='eyes'  \
-# --save_dir=/content/drive/MyDrive/HFGI_New/HFGI/hfgi_output/eyes    /content/drive/MyDrive/HFGI_New/HFGI/experiment/ffhq_condition_first/checkpoints/iteration_16000.pt
+# --images_dir=test_imgs --edit_attribute='beard'  \
+# --save_dir=output_beard  iteration_16000.pt
 
-# python ./scripts/inference.py \
-# --images_dir=./test_imgs  --n_sample=100 --edit_attribute='beard'  \
-# --save_dir=./experiment/inference_results  ./checkpoint/ckpt.pt 
+# python ./scripts/edit.py \
+# --images_dir=test_imgs --edit_attribute='eyes'  \
+# --save_dir=output_eyes   iteration_16000.pt
 
-# python ./scripts/inference.py \
-# --images_dir=./test_imgs  --n_sample=100 --edit_attribute='eyes'  \
-# --save_dir=./experiment/inference_results  ./checkpoint/ckpt.pt 
 
-# python ./scripts/inference.py \
-# --images_dir=./test_imgs  --n_sample=100 --edit_attribute='smile' --edit_degree=1.0  \
-# --save_dir=./experiment/inference_results  ./checkpoint/ckpt.pt 
 
-# python ./scripts/inference.py \
-# --images_dir=./test_imgs  --n_sample=100 --edit_attribute='age' --edit_degree=3  \
-# --save_dir=./experiment/inference_results  ./checkpoint/ckpt.pt 
