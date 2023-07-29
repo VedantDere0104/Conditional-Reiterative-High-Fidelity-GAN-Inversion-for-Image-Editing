@@ -8,8 +8,8 @@
 # Setup 
 
 ```
-git clone https://github.com/VedantDere0104/High-Fidelity-GAN-Inversion-with-Condition-Reiteration-for-image-editing.git
-cd High-Fidelity-GAN-Inversion-with-Condition-Reiteration-for-image-editing
+git clone https://github.com/VedantDere0104/Conditional-Reiterative-High-Fidelity-GAN-Inversion-for-Image-Editing.git
+cd Conditional-Reiterative-High-Fidelity-GAN-Inversion-for-Image-Editing
 ```
 
 # Requirements 
