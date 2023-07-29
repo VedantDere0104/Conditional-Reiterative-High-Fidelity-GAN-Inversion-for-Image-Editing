@@ -67,4 +67,4 @@ bash train.sh
 
 
 ## Acknowledgement
-Thanks to [omertov](https://github.com/omertov/encoder4editing) for sharing their code.
+Thanks to [e4e](https://github.com/omertov/encoder4editing) and [HFGI](https://github.com/Tengfei-Wang/HFGI/tree/main) for sharing their code.
