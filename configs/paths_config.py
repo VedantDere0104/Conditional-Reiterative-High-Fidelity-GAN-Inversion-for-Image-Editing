@@ -1,11 +1,11 @@
 dataset_paths = {
 	#  Face Datasets (FFHQ - train, CelebA-HQ - test)
-	'ffhq': '/content/drive/MyDrive/gfp_inversion/GFPGAN/data',
-	'ffhq_val': '/content/drive/MyDrive/gfp_inversion/GFPGAN/test_data',
+	'ffhq': 'ffhq_dataset',
+	'ffhq_val': 'celebhq_dataset',
 
 	#  Cars Dataset (Stanford cars)
-	'cars_train': '/content/drive/MyDrive/car_ims',
-	'cars_val': '/content/drive/MyDrive/car_ims',
+	'cars_train': 'cars_dataset',
+	'cars_val': 'cars_test',
 }
 
 model_paths = {
@@ -20,8 +20,8 @@ edit_paths = {
 	'pose': 'editing/interfacegan_directions/pose.pt',
 	'cars': 'editing/ganspace_directions/cars_pca.pt',
 	'styleclip': {
-		'delta_i_c': '/content/drive/MyDrive/HFGI_New/HFGI/editings/styleclip/global_directions/ffhq/fs3.npy',
-		's_statistics': '/content/drive/MyDrive/HFGI_New/HFGI/editings/styleclip/global_directions/ffhq/S_mean_std',
-		'templates': '/content/drive/MyDrive/HFGI_New/HFGI/editings/styleclip/global_directions/templates.txt'
+		'delta_i_c': './editings/styleclip/global_directions/ffhq/fs3.npy',
+		's_statistics': './editings/styleclip/global_directions/ffhq/S_mean_std',
+		'templates': './editings/styleclip/global_directions/templates.txt'
 	}
 }
