@@ -24,6 +24,11 @@ pip install --upgrade gdown
 ```
 gdown --fuzzy "https://drive.google.com/file/d/1OMXlZabcq2M44NYz9HlqHanUcely8ZUb/view?usp=sharing"
 ```
+## cars 
+```
+gdown --fuzzy "https://drive.google.com/file/d/1R9tJ0koXpkDzlmErsb-TvuAddAeqBwgZ/view?usp=sharing"
+```
+
 
 # Inference 
 First, create a folder to store the testing images. Ensure that the images in this folder are properly aligned before proceeding with the testing.
@@ -32,6 +37,7 @@ First, create a folder to store the testing images. Ensure that the images in th
 bash inference.sh
 ```
 You can check the commented code in `inference.sh` file which shows different edits. Uncomment the necessary edit and run.
+For cars inversion please uncomment `inference_cars.py` line in bash file.
 ## Arguments 
 
 | Argument | working |
